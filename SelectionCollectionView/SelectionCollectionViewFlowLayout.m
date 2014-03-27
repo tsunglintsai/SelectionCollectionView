@@ -1,14 +1,14 @@
 //
-//  SnapCollectionViewLayout.m
-//  SnapCollectionViewDemo
+//  SelectionCollectionViewFlowLayout.m
+//  SelectionCollectionViewDemo
 //
-//  Created by Henry on 3/25/14.
+//  Created by Henry on 3/26/14.
 //  Copyright (c) 2014 pg. All rights reserved.
 //
 
-#import "SnapCollectionViewLayout.h"
+#import "SelectionCollectionViewFlowLayout.h"
 
-@implementation SnapCollectionViewLayout
+@implementation SelectionCollectionViewFlowLayout
 - (instancetype) init{
     self = [super init];
     if(self){
@@ -19,5 +19,4 @@
     }
     return self;
 }
-
 @end

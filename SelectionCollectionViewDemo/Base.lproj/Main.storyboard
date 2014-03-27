@@ -12,17 +12,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="5Vg-ds-3Do" customClass="SnapCollectionView">
-                                <rect key="frame" x="0.0" y="58" width="320" height="80"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <collectionViewLayout key="collectionViewLayout" id="knB-I1-UTN" customClass="SnapCollectionViewLayout"/>
-                                <cells/>
-                            </collectionView>
+                            <view contentMode="scaleToFill" id="uzl-wH-iv8" customClass="SelectionCollectionView">
+                                <rect key="frame" x="0.0" y="256" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82352948189999997" green="0.25490197539999998" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="snapCollectionView" destination="5Vg-ds-3Do" id="Epe-0f-XXw"/>
+                        <outlet property="selectionCollectionView" destination="uzl-wH-iv8" id="6iK-oc-Nsd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

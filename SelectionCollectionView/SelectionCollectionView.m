@@ -51,7 +51,7 @@ static const NSString *cellIdentifier = @"SelectionCollectionViewCellIdentifier"
     [self addSubview:yelloView];
     
     self.innerCollectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-
+    self.cellWidth = 80;
 
 }
 
@@ -94,7 +94,7 @@ static const NSString *cellIdentifier = @"SelectionCollectionViewCellIdentifier"
     if (velocity.x == 0) { //check which item is selected and move to it
         UICollectionViewCell *selectedCell;
         for (UICollectionViewCell *cell in [self.innerCollectionView visibleCells]){
-            CGRect windowRectOfPgCell = [self convertRect:cell.frame toView:nil];
+            CGRect windowRectOfPgCell = [self.innerCollectionView convertRect:cell.frame toView:self];
             if( CGRectIntersectsRect(windowRectOfPgCell, selectedLine) ){
                 selectedCell = cell;
                 break;
@@ -117,6 +117,7 @@ static const NSString *cellIdentifier = @"SelectionCollectionViewCellIdentifier"
 
 - (CGPoint) contentOffsetBySelectedCellFrame:(CGRect)frame{
     NSUInteger selectedIndex = frame.origin.x / self.cellWidth;
+    NSLog(@"selected index:%@",@(selectedIndex));
     return CGPointMake(selectedIndex*self.cellWidth + self.cellWidth/2 - 200, 0);
 }
 

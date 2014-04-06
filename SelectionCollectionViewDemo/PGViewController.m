@@ -11,7 +11,7 @@
 
 @interface PGViewController ()
 @property (weak, nonatomic) IBOutlet SelectionCollectionView *selectionCollectionView;
-
+@property (strong, nonatomic) NSArray *imageURLList;
 @end
 
 @implementation PGViewController
@@ -22,11 +22,20 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSArray *)imageURLList{
+    if(!_imageURLList){
+        NSString *filesPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"image"];
+        // where pngfolder is the folder as described above.
+        _imageURLList = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:filesPath error:nil];
+    }
+    return _imageURLList;
 }
+
+- (UIImage*) imageOfIndex:(NSUInteger)index{
+    NSString *sourcePath = [[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"image"]stringByAppendingPathComponent:self.imageURLList[index]];
+    return [[UIImage alloc]initWithContentsOfFile:sourcePath];
+}
+
 - (IBAction)buttonClicked:(id)sender {
 }
 

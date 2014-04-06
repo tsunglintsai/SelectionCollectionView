@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA23747218F1EFBE00B032C6 /* image in Resources */ = {isa = PBXBuildFile; fileRef = BA23747118F1EFBE00B032C6 /* image */; };
 		BA3EF74A18E3B7DF00A4744B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3EF74918E3B7DF00A4744B /* Foundation.framework */; };
 		BA3EF74C18E3B7DF00A4744B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3EF74B18E3B7DF00A4744B /* CoreGraphics.framework */; };
 		BA3EF74E18E3B7DF00A4744B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3EF74D18E3B7DF00A4744B /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA23747118F1EFBE00B032C6 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
 		BA3EF74618E3B7DF00A4744B /* SelectionCollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectionCollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA3EF74918E3B7DF00A4744B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BA3EF74B18E3B7DF00A4744B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -116,6 +118,7 @@
 		BA3EF74F18E3B7DF00A4744B /* SelectionCollectionViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BA23747118F1EFBE00B032C6 /* image */,
 				BA3EF75B18E3B7DF00A4744B /* Main.storyboard */,
 				BA3EF75E18E3B7DF00A4744B /* PGViewController.h */,
 				BA3EF75F18E3B7DF00A4744B /* PGViewController.m */,
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA23747218F1EFBE00B032C6 /* image in Resources */,
 				BA3EF76218E3B7DF00A4744B /* Images.xcassets in Resources */,
 				BA3EF75418E3B7DF00A4744B /* InfoPlist.strings in Resources */,
 				BA3EF75D18E3B7DF00A4744B /* Main.storyboard in Resources */,
